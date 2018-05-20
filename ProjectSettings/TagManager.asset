@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -13,10 +14,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Allies
+  - Enemies
+  - Friendly Projectiles
+  - Hostile Projectiles
   - 
   - 
   - 
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy Projectiles
+    uniqueID: 751250971
+    locked: 0
+  - name: Enemies
+    uniqueID: 1553583407
+    locked: 0
+  - name: Player Projectiles
+    uniqueID: 3810782205
+    locked: 0
+  - name: Player
+    uniqueID: 2272178509
+    locked: 0
+  - name: Explosions
+    uniqueID: 4132141221
     locked: 0
