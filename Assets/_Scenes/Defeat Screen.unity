@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.5529412, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.09737444, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You beat Laser Defender!
+  m_Text: You have been defeated!
 --- !u!222 &869067659
 CanvasRenderer:
   m_ObjectHideFlags: 0
