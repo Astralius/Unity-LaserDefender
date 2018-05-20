@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class MusicPlayer : MonoBehaviour
 {
-    public AudioClip startClip;
-    public AudioClip gameClip;
-    public AudioClip endClip;
+    public AudioClip[] Playlist;
 
     private static MusicPlayer instance;
+    private AudioSource musicSource;
 
     private void Start()
     {
@@ -18,8 +19,17 @@ public class MusicPlayer : MonoBehaviour
         else
         {
             instance = this;
-            GameObject.DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(this.gameObject);
+            musicSource = GetComponent<AudioSource>();
         }
 
+        SceneManager.sceneLoaded += (scene, mode) => OnSceneLoaded(scene);
+    }
+
+    private void OnSceneLoaded(Scene scene)
+    {
+        musicSource.Stop();
+        musicSource.clip = Playlist[scene.buildIndex];
+        musicSource.Play();
     }
 }
