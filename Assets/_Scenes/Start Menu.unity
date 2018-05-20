@@ -221,7 +221,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 994788971f97d4466a2be6ef690dd3cd, type: 3}
+    m_Font: {fileID: 12800000, guid: 84343c9f05c2335488e26e26f96599d8, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -354,6 +354,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
+      propertyPath: startClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 357381c28bdc07345b884f00a8cfdc3c, type: 3}
+    - target: {fileID: 11400000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
+      propertyPath: gameClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d45567442c29af74b82197dff08e99e3, type: 3}
+    - target: {fileID: 11400000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
+      propertyPath: endClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f028558cb423c54a8d91fe3fd64250a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d17c8accddfc43d593706f3365be8ab, type: 2}
   m_IsPrefabParent: 0
@@ -413,7 +429,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 994788971f97d4466a2be6ef690dd3cd, type: 3}
+    m_Font: {fileID: 12800000, guid: 3e35cdb3046f7454387f803a654a0f93, type: 3}
     m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
@@ -588,7 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.94482756, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.55032945, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -596,7 +612,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 994788971f97d4466a2be6ef690dd3cd, type: 3}
+    m_Font: {fileID: 12800000, guid: 84343c9f05c2335488e26e26f96599d8, type: 3}
     m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
@@ -608,7 +624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Block Breaker!
+  m_Text: Laser Defender
 --- !u!222 &869067659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +777,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 56}
-  m_SizeDelta: {x: 617, y: 44}
+  m_SizeDelta: {x: 1018.8, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654444587
 MonoBehaviour:
@@ -783,7 +799,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 994788971f97d4466a2be6ef690dd3cd, type: 3}
+    m_Font: {fileID: 12800000, guid: 3e35cdb3046f7454387f803a654a0f93, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -793,9 +809,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Smash all the blocks to win
+  m_Text: Defend the Earth from an Alien invasion
 --- !u!222 &1654444588
 CanvasRenderer:
   m_ObjectHideFlags: 0
