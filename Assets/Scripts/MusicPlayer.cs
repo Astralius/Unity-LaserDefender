@@ -2,7 +2,11 @@
 
 public class MusicPlayer : MonoBehaviour
 {
-    private static MusicPlayer instance = null;
+    public AudioClip startClip;
+    public AudioClip gameClip;
+    public AudioClip endClip;
+
+    private static MusicPlayer instance;
 
     private void Start()
     {
